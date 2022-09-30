@@ -1,2 +1,2 @@
 # vimrc
-My vimrc and ints components
+My vimrc and its components
