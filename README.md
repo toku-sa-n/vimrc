@@ -4,10 +4,8 @@ My vimrc and its components
 
 ## Usage
 
-Clone this repository and create a symbolic link to [`src/main.vim`](main.vim).
+Run `install.sh`. Be sure that you remove your `$HOME/.vimrc` first.
 
 ```
-gh repo clone toku-sa-n/vimrc
-cd ~
-ln -s /path/to/src/main.vim .vimrc
+./install.sh
 ```
