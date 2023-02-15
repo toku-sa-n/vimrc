@@ -6,12 +6,11 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-call ReadPart('plugins/vim-table-mode.vim')
-call ReadPart('plugins/vim-markdown-folding.vim')
-call ReadPart('plugins/ale.vim')
-call ReadPart('plugins/NERDTree.vim')
-call ReadPart('plugins/vim-lsp.vim')
-call ReadPart('plugins/vim-splash.vim')
+" This for loop is from https://stackoverflow.com/a/4500936/13132898.
+" The license is CC BY-SA 2.5.
+for f in split(glob(g:vimrc_dir . '/plugins/*.vim'), '\n')
+    exe 'source' f
+endfor
 
 Plug 'tpope/vim-endwise'
 Plug 'sbdchd/vim2hs'
