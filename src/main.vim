@@ -194,7 +194,6 @@ augroup haskell_specific
     autocmd Filetype haskell setlocal shiftwidth=4
     autocmd Filetype haskell setlocal shiftround
     autocmd Filetype haskell nnoremap <leader>t :!cabal build && cabal test<CR>
-    autocmd Filetype haskell let g:autoformat_autoindent = 0
 augroup END
 "}}}
 "LaTeX{{{
