@@ -30,7 +30,7 @@ Plug 'junegunn/fzf'
 Plug 'whonore/Coqtail'
 "vim-splash{{{
 Plug 'thinca/vim-splash'
-let g:splash#path=g:vimrc_dir . '/title.txt'
+let g:splash#path = g:vimrc_dir . '/../assets/title.txt'
 "}}}
 "ultisnips{{{
 Plug 'SirVer/ultisnips'
