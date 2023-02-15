@@ -9,6 +9,7 @@ let g:vimrc_dir=fnamemodify(resolve(expand('$MYVIMRC')),':h')
 
 call ReadPart('plugins.vim')
 call ReadPart('indent.vim')
+call ReadPart('japanese.vim')
 
 "Display{{{
 filetype plugin indent on
@@ -127,8 +128,6 @@ nnoremap <silent> <leader>n :bnext<CR>
 
 "}}}
 "Others{{{
-"--- Language ---
-set helplang=ja,en
 
 augroup spell_git_commit
     autocmd!
@@ -146,7 +145,6 @@ set history=500
 
 set matchpairs+=「:」
 
-set spelllang+=cjk
 
 if has('python3')
     set pyxversion=3
