@@ -9,10 +9,9 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 "}}}
 call plug#begin('~/.vim/plugged')
-"vim-table-mode{{{
-Plug 'dhruvasagar/vim-table-mode'
-let g:table_mode_corner='|'
-"}}}
+
+exec "source " . g:vimrc_dir . '/plugins/vim-table-mode.vim'
+
 Plug 'tpope/vim-endwise'
 Plug 'sbdchd/vim2hs'
 Plug 'jelera/vim-javascript-syntax'
