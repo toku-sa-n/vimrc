@@ -21,7 +21,6 @@ Plug 'nelstrom/vim-visual-star-search'
 Plug 'tpope/vim-repeat'
 Plug 'philj56/vim-asm-indent'
 Plug 'rust-lang/rust.vim'
-Plug 'junegunn/fzf'
 Plug 'whonore/Coqtail'
 
 call plug#end()

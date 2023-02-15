@@ -82,50 +82,11 @@ set autowrite
 set wildmenu
 set wildmode=list:full
 
-"Show the searched word at the center of the display.
-nnoremap n nzz
-nnoremap N Nzz
-nnoremap * *zz
-nnoremap # #zz
-nnoremap g* g*zz
-nnoremap g# g#zz
-
 set shortmess-=S    " To show the number of matched words.
-nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 "}}}
 "Moving{{{
 "Endless Moving
 set whichwrap=h,l,<,>,[,],b
-"}}}
-"Shortcut{{{
-nnoremap + <C-a>
-nnoremap - <C-x>
-nnoremap Y y$
-nnoremap gO O<Esc>
-nnoremap go o<Esc>
-
-augroup about_make
-    autocmd!
-    autocmd BufNewFile,BufRead * if (filereadable('Makefile') || filereadable('makefile')) | nnoremap <leader>l :up <Bar> make<CR>
-    autocmd BufNewFile,BufRead * if (filereadable('Makefile') || filereadable('makefile')) | nnoremap <leader>v :up <Bar> make run<CR>
-augroup END
-
-" Shortcut for vimrc. It may be good to add the shortcut ":source ~/.vimrc" when .vimrc are opened.
-nnoremap <leader>. :<C-u>execute 'tabnew '.escape(resolve(expand($MYVIMRC)),'\ ')<CR>
-
-nnoremap <leader>w :up<CR>
-nnoremap <leader>W :w !sudo tee %<CR>
-
-cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
-
-nnoremap & :&&<CR>
-xnoremap & :&&<CR>
-
-nnoremap <leader>f :FZF<CR>
-
-nnoremap <silent> <leader>b :bprevious<CR>
-nnoremap <silent> <leader>n :bnext<CR>
-
 "}}}
 "Others{{{
 
@@ -157,8 +118,6 @@ augroup chomp
     autocmd!
     autocmd BufWritePre * silent! exec "%s/ \\+$//g"
 augroup END
-
-nnoremap s "_s
 
 set autoread
 
