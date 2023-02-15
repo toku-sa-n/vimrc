@@ -28,23 +28,6 @@ Plug 'philj56/vim-asm-indent'
 Plug 'rust-lang/rust.vim'
 Plug 'junegunn/fzf'
 Plug 'whonore/Coqtail'
-"vim-airline{{{
-Plug 'vim-airline/vim-airline'
-let g:airline_powerline_fonts=1
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
-let g:airline_theme='jellybeans'
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-let g:airline_symbols.branch = ''
-let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = 'Ξ'
-let g:airline_symbols.maxlinenr = ''
-Plug 'vim-airline/vim-airline-themes'
-"}}}
 "vim-hybrid{{{
 Plug 'w0ng/vim-hybrid'
 let g:hybrid_custom_term_colors=1
