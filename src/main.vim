@@ -9,8 +9,6 @@ let g:vimrc_dir=fnamemodify(resolve(expand('$MYVIMRC')),':h')
 
 call ReadPart('plugins.vim')
 
-"Plugins{{{
-"}}}
 "Display{{{
 filetype plugin indent on
 syntax on
