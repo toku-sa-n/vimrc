@@ -186,14 +186,6 @@ augroup c_specific
     autocmd Filetype c,cpp setlocal foldmethod=indent
 augroup END
 "}}}
-"Coffeescript{{{
-augroup coffeescript_specific
-    autocmd!
-    autocmd Filetype coffee setlocal tabstop=2
-    autocmd Filetype coffee setlocal softtabstop=2
-    autocmd Filetype coffee setlocal shiftwidth=2
-augroup END
-"}}}
 "Haskell{{{
 augroup haskell_specific
     autocmd!
