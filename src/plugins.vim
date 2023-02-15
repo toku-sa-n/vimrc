@@ -28,12 +28,6 @@ Plug 'philj56/vim-asm-indent'
 Plug 'rust-lang/rust.vim'
 Plug 'junegunn/fzf'
 Plug 'whonore/Coqtail'
-"vim-gutentags{{{
-"Auto tags file generator.
-Plug 'ludovicchabant/vim-gutentags'
-
-set statusline+=%{gutentags#statusline()}
-"}}}
 "quickrun{{{
 Plug 'thinca/vim-quickrun'
 let g:quickrun_config={
