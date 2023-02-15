@@ -11,6 +11,7 @@ call ReadPart('plugins/vim-markdown-folding.vim')
 call ReadPart('plugins/ale.vim')
 call ReadPart('plugins/NERDTree.vim')
 call ReadPart('plugins/vim-lsp.vim')
+call ReadPart('plugins/vim-splash.vim')
 
 Plug 'tpope/vim-endwise'
 Plug 'sbdchd/vim2hs'
@@ -28,10 +29,6 @@ Plug 'philj56/vim-asm-indent'
 Plug 'rust-lang/rust.vim'
 Plug 'junegunn/fzf'
 Plug 'whonore/Coqtail'
-"vim-splash{{{
-Plug 'thinca/vim-splash'
-let g:splash#path = g:vimrc_dir . '/../assets/title.txt'
-"}}}
 "ultisnips{{{
 Plug 'SirVer/ultisnips'
 nnoremap <space><space> :<c-u>UltiSnipsEdit<CR>
