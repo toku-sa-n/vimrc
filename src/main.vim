@@ -116,11 +116,11 @@ nnoremap <leader>p :!gh pr create<CR>
 nnoremap <leader>s :Gstatus<CR>
 nnoremap <up> :Git push<CR>
 nnoremap <down> :Git pull<CR>
-cnoremap gck Git checkout
-cnoremap gckb Git checkout -b
-cnoremap gm Gmerge
-cnoremap gb Git branch
-cnoremap gbd Git branch -d
+cnoremap gck<space> Git checkout<space>
+cnoremap gckb<space> Git checkout -b<space>
+cnoremap gm<space> Gmerge<space>
+cnoremap gb<space> Git branch<space>
+cnoremap gbd<space> Git branch -d<space>
 nnoremap <leader>f :FZF<CR>
 
 nnoremap <silent> <leader>b :bprevious<CR>
