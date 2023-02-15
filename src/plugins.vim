@@ -9,6 +9,7 @@ call plug#begin('~/.vim/plugged')
 call ReadPart('plugins/vim-table-mode.vim')
 call ReadPart('plugins/vim-markdown-folding.vim')
 call ReadPart('plugins/ale.vim')
+call ReadPart('plugins/NERDTree.vim')
 
 Plug 'tpope/vim-endwise'
 Plug 'sbdchd/vim2hs'
@@ -26,17 +27,6 @@ Plug 'philj56/vim-asm-indent'
 Plug 'rust-lang/rust.vim'
 Plug 'junegunn/fzf'
 Plug 'whonore/Coqtail'
-"NERDTree{{{
-Plug 'preservim/nerdtree'
-Plug 'PhilRunninger/nerdtree-visual-selection'
-let NERDTreeShowLineNumbers=1
-augroup nerdtree
-    autocmd!
-    " From https://vi.stackexchange.com/a/18489/38995
-    nnoremap <expr> <F9> g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>" : bufexists(expand('%')) ? "\:NERDTreeFind<CR>" : "\:NERDTree<CR>"
-    autocmd FileType nerdtree setlocal relativenumber
-augroup END
-"}}}
 "vim-lsp{{{
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
