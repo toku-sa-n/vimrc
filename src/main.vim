@@ -195,7 +195,6 @@ augroup coffeescript_specific
 augroup END
 "}}}
 "Haskell{{{
-let g:haskellmode_completion_ghc=0
 augroup haskell_specific
     autocmd!
     autocmd Filetype haskell setlocal tabstop=4
