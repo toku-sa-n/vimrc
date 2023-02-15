@@ -1,9 +1,13 @@
 set encoding=utf-8
 scriptencoding utf-8
 
+function ReadPart(path)
+    exec 'source ' . g:vimrc_dir . '/' . a:path
+endfunction
+
 let g:vimrc_dir=fnamemodify(resolve(expand('$MYVIMRC')),':h')
 
-exec "source " . g:vimrc_dir . '/plugins.vim'
+call ReadPart('plugins.vim')
 
 "Plugins{{{
 "}}}

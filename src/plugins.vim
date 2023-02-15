@@ -6,8 +6,8 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-exec "source " . g:vimrc_dir . '/plugins/vim-table-mode.vim'
-exec "source " . g:vimrc_dir . '/plugins/vim-markdown-folding.vim'
+call ReadPart('plugins/vim-table-mode.vim')
+call ReadPart('plugins/vim-markdown-folding.vim')
 
 Plug 'tpope/vim-endwise'
 Plug 'sbdchd/vim2hs'
