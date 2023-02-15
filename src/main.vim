@@ -186,12 +186,6 @@ augroup c_specific
     autocmd Filetype c,cpp setlocal foldmethod=indent
 augroup END
 "}}}
-"Perl{{{
-augroup perl_specific
-    autocmd!
-    autocmd Filetype perl setlocal equalprg=perltidy\ -st
-augroup END
-"}}}
 "Ruby{{{
 augroup ruby_specific
     autocmd!
