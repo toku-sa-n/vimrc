@@ -22,6 +22,7 @@ let g:vimrc_dir=fnamemodify(resolve(expand('$MYVIMRC')),':h')
 call ReadPart('plugins.vim')
 call ReadPart('indent.vim')
 call ReadPart('japanese.vim')
+call ReadPart('local_vimrc.vim')
 call ReadAll('langs')
 
 "Display{{{
@@ -178,10 +179,5 @@ augroup close_quickfix
 augroup END
 
 "}}}
-"load .local_vimrc
-augroup load_local_vimrc
-    autocmd!
-    autocmd BufNewFile,BufReadPost * if findfile('.local_vimrc','.;')!=''|silent! exec "source " . findfile('.local_vimrc','.;')| endif
-augroup END
 
 set fileencodings=utf-8,sjis
