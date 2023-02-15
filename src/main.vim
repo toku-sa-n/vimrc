@@ -178,15 +178,6 @@ augroup close_quickfix
 augroup END
 
 "}}}
-"Extension specific{{{
-"C and C++{{{
-set cinwords+=case
-augroup c_specific
-    autocmd!
-    autocmd Filetype c,cpp setlocal foldmethod=indent
-augroup END
-"}}}
-"}}}}}}
 "load .local_vimrc
 augroup load_local_vimrc
     autocmd!
