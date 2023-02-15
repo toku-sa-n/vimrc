@@ -28,11 +28,6 @@ Plug 'philj56/vim-asm-indent'
 Plug 'rust-lang/rust.vim'
 Plug 'junegunn/fzf'
 Plug 'whonore/Coqtail'
-"vim-hybrid{{{
-Plug 'w0ng/vim-hybrid'
-let g:hybrid_custom_term_colors=1
-let g:hybrid_reduced_contrast=1
-"}}}
 "vim-autoformat{{{
 Plug 'Chiel92/vim-autoformat'
 
