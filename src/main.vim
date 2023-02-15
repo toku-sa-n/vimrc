@@ -11,7 +11,7 @@ call ReadPart('plugins.vim')
 
 "Plugins{{{
 "}}}
-"Display"{{{
+"Display{{{
 filetype plugin indent on
 syntax on
 colorscheme hybrid
