@@ -1,8 +1,18 @@
 set encoding=utf-8
 scriptencoding utf-8
 
+let g:mapleader="\<Space>"
+
 function! ReadPart(path)
     exec 'source ' . g:vimrc_dir . '/' . a:path
+endfunction
+
+function! ReadAll(dirPath)
+    " This for loop is from https://stackoverflow.com/a/4500936/13132898.
+    " The license is CC BY-SA 2.5.
+    for f in split(glob(g:vimrc_dir . '/' . a:dirPath . '/*.vim'), '\n')
+        exe 'source' f
+    endfor
 endfunction
 
 let g:vimrc_dir=fnamemodify(resolve(expand('$MYVIMRC')),':h')
@@ -84,7 +94,6 @@ nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 set whichwrap=h,l,<,>,[,],b
 "}}}
 "Shortcut{{{
-let g:mapleader="\<Space>"
 nnoremap + <C-a>
 nnoremap - <C-x>
 nnoremap Y y$

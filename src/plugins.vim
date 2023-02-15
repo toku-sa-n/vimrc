@@ -6,11 +6,7 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-" This for loop is from https://stackoverflow.com/a/4500936/13132898.
-" The license is CC BY-SA 2.5.
-for f in split(glob(g:vimrc_dir . '/plugins/*.vim'), '\n')
-    exe 'source' f
-endfor
+call ReadAll('plugins')
 
 Plug 'tpope/vim-endwise'
 Plug 'sbdchd/vim2hs'
