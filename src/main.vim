@@ -193,12 +193,6 @@ let g:tex_flavor='latex'
 let g:tex_conceal='abdmgs'
 highlight Conceal guifg=White guibg=NONE ctermfg=15 ctermbg=NONE
 "}}}
-"Snippet{{{
-augroup snippet_specific
-    autocmd!
-    autocmd BufNewFile,BufRead *.snip set noexpandtab
-augroup END
-"}}}
 "Assembly{{{
 augroup assembly_specific
     autocmd!
