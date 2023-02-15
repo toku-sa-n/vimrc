@@ -186,12 +186,6 @@ augroup c_specific
     autocmd Filetype c,cpp setlocal foldmethod=indent
 augroup END
 "}}}
-"Assembly{{{
-augroup assembly_specific
-    autocmd!
-    autocmd BufNewFile,BufRead *.asm set filetype=nasm
-augroup END
-"}}}
 "Rust{{{
 augroup rust_specific
     autocmd!
