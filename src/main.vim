@@ -1,13 +1,14 @@
 set encoding=utf-8
 scriptencoding utf-8
 
-function ReadPart(path)
+function! ReadPart(path)
     exec 'source ' . g:vimrc_dir . '/' . a:path
 endfunction
 
 let g:vimrc_dir=fnamemodify(resolve(expand('$MYVIMRC')),':h')
 
 call ReadPart('plugins.vim')
+call ReadPart('indent.vim')
 
 "Display{{{
 filetype plugin indent on
@@ -44,16 +45,6 @@ set scrolloff=5
 let g:colorizer_colornames=0
 
 hi Folded ctermbg=none
-"}}}
-"indent{{{
-"indent
-set list listchars=tab:>-,trail:_
-set autoindent
-set cindent
-set expandtab
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
 "}}}
 "Completions{{{
 set completeopt=menuone,menu,longest,preview
