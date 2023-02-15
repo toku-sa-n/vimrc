@@ -14,6 +14,9 @@ call ReadPart('plugins.vim')
 "Display{{{
 filetype plugin indent on
 syntax on
+
+" This depends on `vim-hybrid`. I tried to move this line into
+" `src/plugins/vim-hybrid` but couldn't get it work.
 colorscheme hybrid
 
 "Colorchange
