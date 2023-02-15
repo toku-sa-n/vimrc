@@ -56,9 +56,6 @@ set laststatus=2
 "Scroll
 set scrolloff=5
 
-"Colorize
-let g:colorizer_colornames=0
-
 hi Folded ctermbg=none
 "}}}
 "Completions{{{
