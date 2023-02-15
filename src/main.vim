@@ -22,6 +22,7 @@ let g:vimrc_dir=fnamemodify(resolve(expand('$MYVIMRC')),':h')
 call ReadPart('plugins.vim')
 call ReadPart('indent.vim')
 call ReadPart('japanese.vim')
+call ReadAll('langs')
 
 "Display{{{
 filetype plugin indent on
@@ -178,12 +179,6 @@ augroup END
 
 "}}}
 "Extension specific{{{
-"Text{{{
-augroup text_specific
-    autocmd!
-    autocmd Filetype text setlocal textwidth=0 " No auto line break. See http://stst.hateblo.jp/entry/2014/07/14/010844.
-augroup END
-"}}}
 "C and C++{{{
 set cinwords+=case
 augroup c_specific
