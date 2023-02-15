@@ -186,12 +186,6 @@ augroup c_specific
     autocmd Filetype c,cpp setlocal foldmethod=indent
 augroup END
 "}}}
-"Rust{{{
-augroup rust_specific
-    autocmd!
-    autocmd Filetype rust setlocal foldmethod=indent
-augroup END
-"}}}
 "}}}}}}
 "load .local_vimrc
 augroup load_local_vimrc
