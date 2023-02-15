@@ -7,6 +7,7 @@ endif
 call plug#begin('~/.vim/plugged')
 
 exec "source " . g:vimrc_dir . '/plugins/vim-table-mode.vim'
+exec "source " . g:vimrc_dir . '/plugins/vim-markdown-folding.vim'
 
 Plug 'tpope/vim-endwise'
 Plug 'sbdchd/vim2hs'
@@ -23,10 +24,6 @@ Plug 'tpope/vim-repeat'
 Plug 'philj56/vim-asm-indent'
 Plug 'rust-lang/rust.vim'
 Plug 'junegunn/fzf'
-"vim-markdown-folding{{{
-Plug 'mikeboiko/vim-markdown-folding'
-let g:markdown_fold_style = 'nested'
-"}}}
 "ale{{{
 Plug 'dense-analysis/ale'
 let g:ale_linters = {'rust': ['cargo'], 'haskell': ['hls', 'hlint', 'cabal']}
