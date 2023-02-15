@@ -28,11 +28,6 @@ Plug 'philj56/vim-asm-indent'
 Plug 'rust-lang/rust.vim'
 Plug 'junegunn/fzf'
 Plug 'whonore/Coqtail'
-"tagbar{{{
-Plug 'majutsushi/tagbar'
-set updatetime=0    " seemless syncking with tagbar.
-nnoremap <F8> :TagbarToggle<CR>
-"}}}
 call plug#end()
 
 packadd! matchit
