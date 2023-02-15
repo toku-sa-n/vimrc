@@ -15,7 +15,6 @@ endfor
 Plug 'tpope/vim-endwise'
 Plug 'sbdchd/vim2hs'
 Plug 'jelera/vim-javascript-syntax'
-Plug 'tpope/vim-fugitive'   " Git wrapper
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-commentary'
 Plug 'adimit/prolog.vim'
