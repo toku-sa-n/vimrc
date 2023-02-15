@@ -186,14 +186,6 @@ augroup c_specific
     autocmd Filetype c,cpp setlocal foldmethod=indent
 augroup END
 "}}}
-"HTML{{{
-augroup html_specific
-    autocmd!
-    autocmd Filetype html setlocal tabstop=2
-    autocmd Filetype html setlocal softtabstop=2
-    autocmd Filetype html setlocal shiftwidth=2
-augroup END
-"}}}
 "Perl{{{
 augroup perl_specific
     autocmd!
