@@ -23,6 +23,7 @@ call ReadPart('plugins.vim')
 call ReadPart('indent.vim')
 call ReadPart('japanese.vim')
 call ReadPart('local_vimrc.vim')
+call ReadPart('mappings.vim')
 call ReadAll('langs')
 
 "Display{{{
