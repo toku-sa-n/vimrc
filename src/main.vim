@@ -113,8 +113,6 @@ augroup chomp
     autocmd BufWritePre * silent! exec "%s/ \\+$//g"
 augroup END
 
-set autoread
-
 set mouse=a
 
 augroup exclude_quickfix_from_bnext_bprevious
