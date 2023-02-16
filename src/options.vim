@@ -1,3 +1,5 @@
+set encoding=utf-8
+
 set t_Co=16
 set background=dark
 

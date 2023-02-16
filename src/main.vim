@@ -1,4 +1,3 @@
-set encoding=utf-8
 scriptencoding utf-8
 
 " `g:mapleader` must be defined first and foremost. Otherwise, all lines using
