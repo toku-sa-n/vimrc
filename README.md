@@ -12,4 +12,4 @@ Run `install.sh`. Be sure that you remove your `$HOME/.vimrc` first.
 
 ## License
 
-[AGPL-3.0-or-later](LICENSE)
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
