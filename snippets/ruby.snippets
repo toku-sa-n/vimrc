@@ -1,0 +1,137 @@
+#
+# minitest
+#
+snippet minitest "test_snip" bA
+require 'minitest/autorun'
+require_relative '../lib/$1'
+
+class $2 < Minitest::Test
+	def setup
+		$3
+	end
+
+	$4
+end$0
+endsnippet
+
+#
+# library
+#
+
+snippet "^req" "require" rA
+require '$1'$0
+endsnippet
+
+#
+# class
+#
+
+snippet "^cl" "class definition" rA
+class $1${2: < ${3:Interit}}
+	$4
+end$0
+endsnippet
+
+# separate the snippet of def initialize and class definition.
+# in some cases it's not needed to declare initialize function.
+snippet defi "def initialize" bA
+def initialize($1)`!p
+snip >> 2
+args = [x for x in t[1].split(',')]
+if args:
+	for arg in args:
+		snip += "@%s = %s" % (arg, arg)
+`
+$2
+end$0
+endsnippet
+
+#
+# function definition
+#
+
+snippet def "function definition" bA
+def $1($2)
+	$3
+end$0
+endsnippet
+
+#
+# if statement
+#
+
+snippet if "if ... end"
+if $1
+	$2
+end$0
+endsnippet
+
+snippet ie "if else end"
+if $1
+	$2
+else
+	$3
+end$0
+endsnippet
+
+snippet el "elsif" b
+elsif $1
+	$2
+endsnippet
+
+#
+# iteration methods.
+#
+
+snippet tt "t.times do ... end"
+$1.times do${2: |${3:i}|}
+	$4
+end
+$0
+endsnippet
+
+snippet et "(start...end).each do ... end"
+($1..$2).each do${3: |${4:i}|}
+	$5
+end
+endsnippet
+snippet un "unless ... end"
+unless $1
+	$2
+end$0
+endsnippet
+
+snippet w "while"
+while $1
+	$2
+end$0
+endsnippet
+
+#
+# others
+#
+
+snippet comp "competitive programming" bA
+def factor(n)
+	if n==1
+		return [1]
+	end
+	return \`factor #{n}|sed -r 's/[0-9]+://g'|tr ' ' '\n'|sort -n\`.split.map(&:to_i)
+end
+
+# Example: factors(100) => {2=>2, 5=>2}
+def factors_and_num(n)
+	factors=factor(n)
+	ret=Hash.new(0)
+	factors.each do |i|
+		ret[i]+=1
+	end
+	return ret
+end
+
+def uniq_factor(n)
+	return \`factor #{n}|sed -r 's/[0-9]+://g'|tr ' ' '\n'|sort -n|uniq\`.split.map(&:to_i)
+end
+
+$0
+endsnippet

@@ -1,0 +1,444 @@
+#
+# Template
+#
+snippet temp "LaTeX Template" bA
+\documentclass[titlepage,dvipdfmx,uplatex,a4j,12pt]{jsarticle}
+\usepackage{url}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage[ruled,vlined]{algorithm2e}
+\usepackage{amsthm}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\lstset{%
+	basicstyle={\ttfamily\small},
+	commentstyle={\ttfamily\small},
+	frame=tb,
+	breaklines=true,
+	lineskip=-0.5ex,
+	tabsize=2,
+	numbers=left,
+	numberstyle={\ttfamily\scriptsize},
+	columns=[l]{fullflexible},
+}
+\renewcommand\lstlistingname{ソースコード}
+\renewcommand\proofname{\bf 証明}
+
+\title{$1}
+\author{$2}
+
+\begin{document}
+
+\maketitle
+
+$0
+
+\end{document}
+endsnippet
+
+#
+# header
+#
+
+snippet use "usepackage" bA
+\usepackage{$1}$0
+endsnippet
+
+snippet boo "booktabs" bA
+\usepackage{booktabs}
+endsnippet
+
+#
+# Headline
+#
+
+snippet sec "\section" bA
+\section{$1}$0
+endsnippet
+
+snippet para "\paragraph" bA
+\paragraph{$1}$0
+endsnippet
+
+snippet sub "\subsection" bA
+\subsection{$1}$0
+endsnippet
+
+snippet ssub "\subsubsection" bA
+\subsubsection{$1}$0
+endsnippet
+
+#
+# Itemize
+#
+
+snippet enu "enumration" bA
+\begin{enumerate}
+	$1
+\end{enumerate}$0
+endsnippet
+
+snippet item "itemize" bA
+\begin{itemize}
+	$1
+\end{itemize}$0
+endsnippet
+
+snippet de "Description" bA
+\begin{description}
+	$1
+\end{description}$0
+endsnippet
+
+snippet itm "item" bA
+\item $0
+endsnippet
+
+snippet dit "item []" bA
+\item [$1] $0
+endsnippet
+
+#
+# Math Area
+#
+
+snippet ali "align" bA
+\begin{align}
+	$1
+\end{align}$0
+endsnippet
+
+snippet equ "equation" bA
+\begin{equation}
+	$1
+\end{equation}$0
+endsnippet
+
+snippet "\$\$" "math" rA
+\$$1\$$0
+endsnippet
+
+snippet cases "cases" i
+\begin{cases}
+	$1
+\end{cases}$0
+endsnippet
+
+#
+# Math Symbol
+#
+
+snippet integ "integral" iA
+\int_{$1}^{$2} $0
+endsnippet
+
+snippet inf "infty" i
+\infty $0
+endsnippet
+
+snippet != "not equal" iA
+\ne $0
+endsnippet
+
+snippet ^^ "power" iA
+^{$1}$0
+endsnippet
+
+snippet ** "times" iA
+\times$0
+endsnippet
+
+snippet == "align equal" iA
+&=$0
+endsnippet
+
+snippet __ "below" iA
+_{$1}$0
+endsnippet
+
+snippet (( "parentheses" iA
+\left( $1 \right)$0
+endsnippet
+
+snippet {{ "curly braces" iA
+\left\\{ $1 \right\\}$0
+endsnippet
+
+snippet [[ "square braces" iA
+\left[ $1 \right]$0
+endsnippet
+
+snippet << "angle" iA
+\left\langle $1 \right\rangle $0
+endsnippet
+
+snippet // "fraction" iA
+\\frac{$1}{$2}$0
+endsnippet
+
+snippet ... "dots" iA
+\dots $0
+endsnippet
+
+snippet sin "sin" i
+\sin $0
+endsnippet
+
+snippet cos "cos" i
+\cos $0
+endsnippet
+
+snippet tan "tan" i
+\tan $0
+endsnippet
+
+snippet ceil "ceil function" i
+\left\lceil{$1}\right\rceil $0
+endsnippet
+
+snippet floor "floor function" i
+\left\lfloor{$1}\right\rfloor $0
+endsnippet
+
+snippet || "Absolute value" iA
+\left|$1\right|$0
+endsnippet
+
+snippet ma "mathrm" i
+\mathrm{$1}$0
+endsnippet
+
+snippet cal "mathcal" iA
+\mathcal{$1}$0
+endsnippet
+
+snippet log "log" iA
+\log $0
+endsnippet
+
+snippet sum "sum with sigma" iA
+\\sum_{$1}^{$2}$0
+endsnippet
+
+snippet <= "leq" iA
+\leq $0
+endsnippet
+
+snippet >= "geq" iA
+\geq $0
+endsnippet
+
+snippet => "Rightarrow" iA
+\Rightarrow $0
+endsnippet
+
+snippet `2 "sqrt" iA
+\sqrt{$1}$0
+endsnippet
+
+snippet bar "bar" iA
+\bar{$1}$0
+endsnippet
+
+snippet bf "bold" iA
+\mathbf{$1}$0
+endsnippet
+
+snippet bb "bb" iA
+\mathbb{$1}$0
+endsnippet
+
+snippet rm "mathrm" i
+\mathrm{$1}$0
+endsnippet
+
+snippet nab "nabla" i
+\nabla $0
+endsnippet
+
+snippet til "tilde" i
+\tilde{$1}$0
+endsnippet
+
+snippet inter "intercal" i
+\intercal $0
+endsnippet
+
+snippet part "partial" i
+\partial $0
+endsnippet
+
+snippet dot "cdot" iA
+\cdot
+endsnippet
+
+snippet `O "Omega" iA
+\Omega $0
+endsnippet
+
+snippet bc "because" iA
+\because $0
+endsnippet
+
+snippet tf "therefore" iA
+\therefore $0
+endsnippet
+
+snippet <- "leftarrow" iA
+\leftarrow $0
+endsnippet
+
+snippet -> "rightarrow" iA
+\rightarrow $0
+endsnippet
+
+snippet oplus "oplus" iA
+\oplus $0
+endsnippet
+
+snippet land "land" i
+\land $0
+endsnippet
+
+snippet forall "forall" iA
+\forall $0
+endsnippet
+
+snippet in "∈" i
+\in $0
+endsnippet
+
+snippet \\ "backslash" i
+\backslash $0
+endsnippet
+
+snippet equiv "Equiv" i
+\equiv $0
+endsnippet
+
+snippet mod "mod" i
+\mod $0
+endsnippet
+
+snippet maru "ajMaru" i
+\ajMaru{$1}$0
+endsnippet
+
+snippet ggg "ggg" i
+\ggg $0
+endsnippet
+
+#
+# Other environment
+#
+
+snippet proof "proof" bA
+\begin{proof}
+	$1
+\end{proof}$0
+endsnippet
+
+snippet ver "verbatim" bA
+\begin{verbatim}
+$1
+\end{verbatim}$0
+endsnippet
+
+snippet env "environment" bA
+\begin{$1}
+	$2
+\end{$1}$0
+endsnippet
+
+snippet lstl "lstlisting" bA
+\begin{lstlisting}[language={$1}, label=$2, caption=$3]
+$4
+\end{lstlisting}$0
+endsnippet
+
+snippet img "Put an image to the center of paper" A
+\begin{figure}[${1:tb}]
+	\centering
+	\includegraphics[width=\linewidth]{$2}
+	\caption{$3}\label{fig:$2}
+\end{figure}$0
+endsnippet
+
+snippet fr "Frame"
+\begin{frame}{$1}
+	$2
+\end{frame}$0
+endsnippet
+
+snippet alg "algorithm" A
+\begin{algorithm}[H]
+	$1
+\end{algorithm}$0
+endsnippet
+
+#
+# Reference
+#
+
+snippet la "label"
+\label{$1}$0
+endsnippet
+
+snippet "ref" "\ref{}" r
+\ref{$1}$0
+endsnippet
+
+#
+# Table
+#
+
+snippet ta "table"
+\begin{table}[$1]
+	\caption{$2}
+	\centering
+	\begin{tabular}{$3}
+		\toprule
+		$4
+		\midrule
+		$5
+		\bottomrule
+	\end{tabular}
+\end{table}$0
+endsnippet
+
+#
+# Abbreviation
+#
+
+snippet sb "somebody" wA
+somebody$0
+endsnippet
+
+snippet sth "something" wA
+something
+endsnippet
+
+#
+# Greek
+#
+
+snippet `o "omega" iA
+\omega $0
+endsnippet
+
+#
+# Others
+#
+
+snippet lsti "lstinline" iA
+\lstinline{$1}$0
+endsnippet
+
+snippet lstf "lstinputlistings" iA
+\lstinputlisting[label=$1, caption=$2]{$3}$0
+endsnippet
+
+snippet inc "include"
+\include{$1}$0
+endsnippet
