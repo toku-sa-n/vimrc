@@ -24,5 +24,5 @@ let g:formatters_bib = ['bibtex']
 augroup autoformat
     autocmd!
     autocmd FileType tex,haskell let b:autoformat_autoindent=0
-    autocmd BufWritePre *.s,*.pl,*.rs,*.hs,*.java,*.css,*.tex,*.c,*.cpp,*.hpp,*.html,*.css,*.h,*.js,*.py,*.rb,*.elm,*.awk,*.go,*.json,*.scss,*.sass,*.bib,*.tsx,*.ts :Autoformat
+    autocmd BufWritePre *.s,*.pl,*.rs,*.hs,*.java,*.css,*.tex,*.c,*.cpp,*.hpp,*.html,*.css,*.h,*.js,*.py,*.rb,*.elm,*.awk,*.go,*.json,*.scss,*.sass,*.bib,*.tsx,*.ts,*ml,*mli :Autoformat
 augroup END
