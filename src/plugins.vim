@@ -22,6 +22,7 @@ Plug 'tpope/vim-repeat'
 Plug 'philj56/vim-asm-indent'
 Plug 'rust-lang/rust.vim'
 Plug 'whonore/Coqtail'
+Plug 'github/copilot.vim'
 
 call plug#end()
 
