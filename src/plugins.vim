@@ -23,6 +23,7 @@ Plug 'philj56/vim-asm-indent'
 Plug 'rust-lang/rust.vim'
 Plug 'whonore/Coqtail'
 Plug 'github/copilot.vim'
+Plug 'ocaml/vim-ocaml'
 
 call plug#end()
 
