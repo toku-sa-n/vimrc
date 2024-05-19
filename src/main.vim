@@ -4,6 +4,8 @@ scriptencoding utf-8
 " `<leader>` will use the old leader key.
 let g:mapleader="\<Space>"
 
+let g:vimrc_dir=fnamemodify(resolve(expand('$MYVIMRC')), ':h')
+
 "Plugins{{{
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
